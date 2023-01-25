@@ -1,6 +1,13 @@
 function cartesianPoint (x: number, y: number): Point {
     return {
-        x,
-        y
+        getX: function(): number {
+            return x;
+        },
+
+        getY: function(): number {
+            return y;
+        }
     }
 }
+
+export {cartesianPoint}
