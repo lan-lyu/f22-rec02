@@ -1,13 +1,13 @@
-function cartesianPoint (x: number, y: number): Point {
+function newCartesianPoint (x: number, y: number): Point {
     return {
-        getX: function(): number {
+        getX() {
             return x;
         },
 
-        getY: function(): number {
+        getY() {
             return y;
         }
     }
 }
 
-export {cartesianPoint}
+export {newCartesianPoint}
